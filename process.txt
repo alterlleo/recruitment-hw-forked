@@ -1,5 +1,6 @@
 CLAIM:
-the output of the allegro sensor is a voltage proportionate to the load current. So I compare this value with a referement voltage with a LM393 comparator: it give an output HIGH if the allegro output is major than the referement voltage. The referement voltage is the maximum voltage that the load can take without producing more than 500W. So, if P = IV, than V = P/I, where I consider P as maximum power = 500W. I = Vout/s, where Vout is the allgero output and s is the sensibility.
+TODO: study better how check the power limit from the allegro sensor output.
 --
 --
-Now I have the output, it is better to add a LPF in order to erase bad oscillations and then I use a flip flop to keep the relay open if the output of the LM393 is high.
+Now I have the output, it is better to add a LPF in order to erase bad oscillations.
+in order to keep open the relay, the output of the comparator must trigger two transistor: one used to loop the comparator high and the other one to bypass the relay, so it will be open untill someone shut down the system.
