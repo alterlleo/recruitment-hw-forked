@@ -1196,7 +1196,7 @@
     (property "Value" "AD633JN" (id 1) (at 143.51 72.39 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "" (id 2) (at 143.51 73.914 0)
+    (property "Footprint" "LM393:LM393N" (id 2) (at 143.51 73.914 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (id 3) (at 123.19 80.01 0)
@@ -1392,7 +1392,7 @@
     (property "Value" "Conn_01x02_Female" (id 1) (at 236.22 88.8999 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" (id 2) (at 234.95 86.36 0)
+    (property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" (id 2) (at 234.95 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 234.95 86.36 0)
@@ -1494,7 +1494,7 @@
       (reference "J1") (unit 1) (value "Conn_01x03_Female") (footprint "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical")
     )
     (path "/9ef2c0bd-0176-4f0e-b213-c48663ceb734"
-      (reference "J2") (unit 1) (value "Conn_01x02_Female") (footprint "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical")
+      (reference "J2") (unit 1) (value "Conn_01x02_Female") (footprint "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical")
     )
     (path "/b4450c83-6da6-4393-a892-92bf8cbec8aa"
       (reference "K1") (unit 1) (value "relay") (footprint "Relay_THT:Relay_1P1T_NO_10x24x18.8mm_Panasonic_ADW11xxxxW_THT")
@@ -1524,7 +1524,7 @@
       (reference "U1") (unit 1) (value "LM393N") (footprint "LM393:LM393N")
     )
     (path "/02ec90e1-80ff-4a89-ad77-1717753cf5bc"
-      (reference "U2") (unit 1) (value "AD633JN") (footprint "")
+      (reference "U2") (unit 1) (value "AD633JN") (footprint "LM393:LM393N")
     )
     (path "/8bd72d47-aeb7-450d-acca-ccb14d6baac1"
       (reference "regolator1") (unit 1) (value "5V") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
