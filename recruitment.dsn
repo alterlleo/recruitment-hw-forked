@@ -21,8 +21,8 @@
       )
     )
     (boundary
-      (path pcb 0  132670 -128558  81229.8 -128558  81229.8 -79850  132670 -79850
-            132670 -128558)
+      (path pcb 0  155530 -106675  101550 -106675  101550 -64610  155530 -64610
+            155530 -106675)
     )
     (via "Via[0-1]_800:400_um")
     (rule
@@ -34,38 +34,38 @@
   )
   (placement
     (component Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin
-      (place SW1 93980.000000 -124460.000000 front 0.000000 (PN SW_SPST))
+      (place SW1 114300.000000 -99060.000000 front 90.000000 (PN SW_SPST))
     )
     (component Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical
-      (place J2 121920.000000 -109220.000000 front 0.000000 (PN Conn_01x02_Female))
+      (place LoadConnector1 147320.000000 -99600.000000 front 0.000000 (PN Conn_01x02_Female))
     )
     (component Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical
-      (place J1 88900.000000 -116840.000000 front 180.000000 (PN Conn_01x03_Female))
+      (place SupplyConnector1 109220.000000 -96520.000000 front 0.000000 (PN Conn_01x03_Female))
     )
     (component LM393:LM393N
-      (place U2 102870.000000 -95419.533000 front 0.000000 (PN AD633JN))
-    )
-    (component LM393:LM393N::1
-      (place U1 115570.000000 -93980.000000 front 0.000000 (PN LM393N))
+      (place Multiplier1 125730.000000 -80179.533000 front 0.000000 (PN AD834JN))
+      (place Comparator1 138430.000000 -80179.533000 front 0.000000 (PN LM393N))
     )
     (component "Package_TO_SOT_THT:TO-220-3_Vertical"
-      (place regolator1 96520.000000 -111760.000000 front -90.000000 (PN 5V))
+      (place regolator1 119380.000000 -96520.000000 front -90.000000 (PN 5V))
     )
     (component "Package_TO_SOT_THT:TO-92_Inline"
-      (place Q2 111760.000000 -109220.000000 front 0.000000 (PN BS170))
-      (place Q1 104140.000000 -109220.000000 front 0.000000 (PN BS170))
+      (place MOSFET2 127000.000000 -93980.000000 front 0.000000 (PN BS170))
+      (place MOSFET1 134620.000000 -93980.000000 front 0.000000 (PN BS170))
     )
     (component Relay_THT:Relay_1P1T_NO_10x24x18.8mm_Panasonic_ADW11xxxxW_THT
-      (place K1 90322.500000 -104387.500000 back 180.000000 (PN relay))
+      (place Relay1 113182.500000 -89147.500000 back 180.000000 (PN relay))
     )
     (component Resistor_SMD:R_2816_7142Metric
-      (place R4 116840.000000 -86360.000000 front 0.000000 (PN R))
-      (place R3 106680.000000 -116840.000000 front 0.000000 (PN R))
-      (place R2 116840.000000 -124460.000000 front 0.000000 (PN 1000))
-      (place R1 116840.000000 -116840.000000 front 0.000000 (PN 1150))
+      (place R4 139700.000000 -71120.000000 front 0.000000 (PN R))
+      (place R3 129540.000000 -101600.000000 front 0.000000 (PN R))
+      (place R2 144780.000000 -93980.000000 front 0.000000 (PN 1000))
+    )
+    (component Resistor_SMD:R_2816_7142Metric::1
+      (place R1 139700.000000 -101600.000000 front 0.000000 (PN 1150))
     )
     (component "Sensor_Current:Allegro_PSOF-7_4.8x6.4mm_P1.60mm"
-      (place HallSensor1 106680.000000 -86360.000000 front 0.000000 (PN "Allegro ACS781xLR"))
+      (place HallSensor1 129540.000000 -71120.000000 front 0.000000 (PN "Allegro ACS781xLR"))
     )
   )
   (library
@@ -162,145 +162,6 @@
       (pin Oval[A]Pad_1350x1350_um 3 0 -4000)
     )
     (image LM393:LM393N
-      (outline (path signal 0  7566.32 3295.42  7573.37 3278.4  7576.86 3279.91  7714.64 2914.47
-            7817.06 2537.59  7883.19 2152.68  7912.44 1763.23  7904.53 1372.76
-            7859.54 984.808  7777.88 602.891  7660.28 230.466  7507.82 -129.094
-            7321.86 -472.534  7104.11 -796.742  6856.52 -1098.78  6581.34 -1375.92
-            6281.07 -1625.65  5958.41 -1845.7  5616.3 -2034.09  5257.83 -2189.1
-            4886.25 -2309.34  4504.92 -2393.71  4117.3 -2441.45  3726.9 -2452.13
-            3337.25 -2425.65  2951.88 -2362.26  2574.28 -2262.51  2207.87 -2127.33
-            1855.97 -1957.93  1521.77 -1755.85  1208.29 -1522.91  918.372 -1261.23
-            654.64 -973.176  419.484 -661.357  215.033 -328.598  43.139 22.089
-            46.628 23.598  39.032 41.935  53.677 77.29  89.032 91.935  124.387 77.29
-            131.436 60.272  134.924 61.78  308.392 -290.788  515.581 -624.655
-            754.498 -936.607  1022.84 -1223.64  1318.03 -1482.98  1637.21 -1712.15
-            1977.32 -1908.93  2335.08 -2071.42  2707.04 -2198.06  3089.62 -2287.64
-            3479.15 -2339.28  3871.86 -2352.49  4263.97 -2327.15  4651.71 -2263.5
-            5031.35 -2162.15  5399.22 -2024.08  5751.79 -1850.61  6085.65 -1643.42
-            6397.61 -1404.5  6684.64 -1136.16  6943.98 -840.974  7173.15 -521.791
-            7369.93 -181.682  7532.42 176.077  7659.06 548.04  7748.64 930.625
-            7800.28 1320.15  7813.49 1712.86  7788.15 2104.97  7724.5 2492.71
-            7623.15 2872.35  7485.08 3240.22  7488.56 3241.73  7480.97 3260.07
-            7495.61 3295.42  7530.97 3310.07))
-      (outline (path signal 50  7366 -8636  8636 -8636))
-      (outline (path signal 50  7366 -9525  7366 -8636))
-      (outline (path signal 50  254 -9525  7366 -9525))
-      (outline (path signal 50  254 -8636  254 -9525))
-      (outline (path signal 50  -1016 -8636  254 -8636))
-      (outline (path signal 50  -1016 1016  -1016 -8636))
-      (outline (path signal 50  254 1016  -1016 1016))
-      (outline (path signal 50  254 1905  254 1016))
-      (outline (path signal 50  7366 1905  254 1905))
-      (outline (path signal 50  7366 1016  7366 1905))
-      (outline (path signal 50  8636 1016  7366 1016))
-      (outline (path signal 50  8636 -8636  8636 1016))
-      (outline (path signal 120  7239 1026.3  7239 1778))
-      (outline (path signal 120  7239 -1513.7  7239 -1026.3))
-      (outline (path signal 120  7239 -4053.7  7239 -3566.3))
-      (outline (path signal 120  7239 -6593.7  7239 -6106.3))
-      (outline (path signal 120  381 -8646.3  381 -9398))
-      (outline (path signal 120  381 -6106.3  381 -6593.7))
-      (outline (path signal 120  381 -3566.3  381 -4053.7))
-      (outline (path signal 120  381 -1094.74  381 -1513.7))
-      (outline (path signal 100  508 1651  508 -9271))
-      (outline (path signal 100  7112 1651  508 1651))
-      (outline (path signal 100  7112 -9271  7112 1651))
-      (outline (path signal 100  508 -9271  7112 -9271))
-      (outline (path signal 120  381 1778  381 1094.74))
-      (outline (path signal 120  7239 1778  381 1778))
-      (outline (path signal 120  7239 -9398  7239 -8646.3))
-      (outline (path signal 120  381 -9398  7239 -9398))
-      (outline (path signal 100  8026.4 406.4  7112 406.4))
-      (outline (path signal 100  8026.4 -406.4  8026.4 406.4))
-      (outline (path signal 100  7112 -406.4  8026.4 -406.4))
-      (outline (path signal 100  7112 406.4  7112 -406.4))
-      (outline (path signal 100  8026.4 -2133.6  7112 -2133.6))
-      (outline (path signal 100  8026.4 -2946.4  8026.4 -2133.6))
-      (outline (path signal 100  7112 -2946.4  8026.4 -2946.4))
-      (outline (path signal 100  7112 -2133.6  7112 -2946.4))
-      (outline (path signal 100  8026.4 -4673.6  7112 -4673.6))
-      (outline (path signal 100  8026.4 -5486.4  8026.4 -4673.6))
-      (outline (path signal 100  7112 -5486.4  8026.4 -5486.4))
-      (outline (path signal 100  7112 -4673.6  7112 -5486.4))
-      (outline (path signal 100  8026.4 -7213.6  7112 -7213.6))
-      (outline (path signal 100  8026.4 -8026.4  8026.4 -7213.6))
-      (outline (path signal 100  7112 -8026.4  8026.4 -8026.4))
-      (outline (path signal 100  7112 -7213.6  7112 -8026.4))
-      (outline (path signal 100  -406.4 -8026.4  508 -8026.4))
-      (outline (path signal 100  -406.4 -7213.6  -406.4 -8026.4))
-      (outline (path signal 100  508 -7213.6  -406.4 -7213.6))
-      (outline (path signal 100  508 -8026.4  508 -7213.6))
-      (outline (path signal 100  -406.4 -5486.4  508 -5486.4))
-      (outline (path signal 100  -406.4 -4673.6  -406.4 -5486.4))
-      (outline (path signal 100  508 -4673.6  -406.4 -4673.6))
-      (outline (path signal 100  508 -5486.4  508 -4673.6))
-      (outline (path signal 100  -406.4 -2946.4  508 -2946.4))
-      (outline (path signal 100  -406.4 -2133.6  -406.4 -2946.4))
-      (outline (path signal 100  508 -2133.6  -406.4 -2133.6))
-      (outline (path signal 100  508 -2946.4  508 -2133.6))
-      (outline (path signal 100  -406.4 -406.4  508 -406.4))
-      (outline (path signal 100  -406.4 406.4  -406.4 -406.4))
-      (outline (path signal 100  508 406.4  -406.4 406.4))
-      (outline (path signal 100  508 -406.4  508 406.4))
-      (outline (path signal 100  10033 -9017  10287 -9017))
-      (outline (path signal 100  10160 -9271  10287 -9017))
-      (outline (path signal 100  10160 -9271  10033 -9017))
-      (outline (path signal 100  10033 1397  10287 1397))
-      (outline (path signal 100  10160 1651  10287 1397))
-      (outline (path signal 100  10160 1651  10033 1397))
-      (outline (path signal 100  10160 1651  10160 -9271))
-      (outline (path signal 100  3810 -9271  10541 -9271))
-      (outline (path signal 100  3810 1651  10541 1651))
-      (outline (path signal 100  6858 2667  6858 2413))
-      (outline (path signal 100  7112 2540  6858 2413))
-      (outline (path signal 100  7112 2540  6858 2667))
-      (outline (path signal 100  762 2667  762 2413))
-      (outline (path signal 100  508 2540  762 2413))
-      (outline (path signal 100  508 2540  762 2667))
-      (outline (path signal 100  508 2540  7112 2540))
-      (outline (path signal 100  7112 -7620  7112 2921))
-      (outline (path signal 100  508 -7620  508 2921))
-      (outline (path signal 100  7366 -10033  7366 -10287))
-      (outline (path signal 100  7620 -10160  7366 -10287))
-      (outline (path signal 100  7620 -10160  7366 -10033))
-      (outline (path signal 100  254 -10033  254 -10287))
-      (outline (path signal 100  0 -10160  254 -10287))
-      (outline (path signal 100  0 -10160  254 -10033))
-      (outline (path signal 100  0 -10160  7620 -10160))
-      (outline (path signal 100  7620 -7620  7620 -10541))
-      (outline (path signal 100  0 -7620  0 -10541))
-      (outline (path signal 100  -2667 -2794  -2413 -2794))
-      (outline (path signal 100  -2540 -2540  -2413 -2794))
-      (outline (path signal 100  -2540 -2540  -2667 -2794))
-      (outline (path signal 100  -2667 254  -2413 254))
-      (outline (path signal 100  -2540 0  -2413 254))
-      (outline (path signal 100  -2540 0  -2667 254))
-      (outline (path signal 100  -2540 -2540  -2540 -3810))
-      (outline (path signal 100  -2540 0  -2540 1270))
-      (outline (path signal 100  0 -2540  -2921 -2540))
-      (outline (path signal 100  0 0  -2921 0))
-      (outline (path signal 50  7366 -9525  254 -9525))
-      (outline (path signal 50  7366 -8636  7366 -9525))
-      (outline (path signal 50  7366 1905  7366 1016))
-      (outline (path signal 50  254 1905  7366 1905))
-      (outline (path signal 50  254 1016  254 1905))
-      (outline (path signal 50  254 -9525  254 -8636))
-      (outline (path signal 50  254 -8636  -1016 -8636))
-      (outline (path signal 50  8636 -8636  7366 -8636))
-      (outline (path signal 50  8636 1016  8636 -8636))
-      (outline (path signal 50  8636 1016  7366 1016))
-      (outline (path signal 50  -1016 1016  254 1016))
-      (outline (path signal 50  -1016 -8636  -1016 1016))
-      (pin Round[A]Pad_1524_um 8 7620 0)
-      (pin Round[A]Pad_1524_um 7 7620 -2540)
-      (pin Round[A]Pad_1524_um 6 7620 -5080)
-      (pin Round[A]Pad_1524_um 5 7620 -7620)
-      (pin Round[A]Pad_1524_um 4 0 -7620)
-      (pin Round[A]Pad_1524_um 3 0 -5080)
-      (pin Round[A]Pad_1524_um 2 0 -2540)
-      (pin Rect[A]Pad_1524x1524_um 1 0 0)
-    )
-    (image LM393:LM393N::1
       (outline (path signal 50  -1016 -8636  -1016 1016))
       (outline (path signal 50  -1016 1016  254 1016))
       (outline (path signal 50  8636 1016  7366 1016))
@@ -567,6 +428,20 @@
       (pin RoundRect[T]Pad_3025x4450_250.952_um_0.000000_0 1 -2512.5 0)
       (pin RoundRect[T]Pad_3025x4450_250.952_um_0.000000_0 2 2512.5 0)
     )
+    (image Resistor_SMD:R_2816_7142Metric::1
+      (outline (path signal 100  -3550 2100  3550 2100))
+      (outline (path signal 100  3550 -2100  -3550 -2100))
+      (outline (path signal 100  3550 2100  3550 -2100))
+      (outline (path signal 100  -3550 -2100  -3550 2100))
+      (outline (path signal 50  4280 2480  4280 -2480))
+      (outline (path signal 50  -4280 -2480  -4280 2480))
+      (outline (path signal 50  -4280 2480  4280 2480))
+      (outline (path signal 50  4280 -2480  -4280 -2480))
+      (outline (path signal 120  -797.369 -2210  797.369 -2210))
+      (outline (path signal 120  -797.369 2210  797.369 2210))
+      (pin RoundRect[T]Pad_3025x4450_250.952_um_0.000000_0 2 2512.5 0)
+      (pin RoundRect[T]Pad_3025x4450_250.952_um_0.000000_0 1 -2512.5 0)
+    )
     (image "Sensor_Current:Allegro_PSOF-7_4.8x6.4mm_P1.60mm"
       (outline (path signal 120  2570 -250  2570 250))
       (outline (path signal 120  2570 3320  700 3320))
@@ -680,64 +555,60 @@
   )
   (network
     (net "Net-(HallSensor1-Pad1)"
-      (pins U1-8 regolator1-3 R3-2 R1-1 HallSensor1-1)
+      (pins Multiplier1-6 Comparator1-8 regolator1-3 R3-2 R1-1 HallSensor1-1)
     )
     (net GND
-      (pins J2-2 J1-1 U2-6 U2-4 U2-2 U1-4 regolator1-2 Q2-1 Q1-1 K1-6 R2-2 HallSensor1-2)
+      (pins LoadConnector1-2 SupplyConnector1-1 Multiplier1-2 Multiplier1-3 Multiplier1-4
+        Multiplier1-8 Comparator1-4 regolator1-2 MOSFET2-1 MOSFET1-1 Relay1-6 R2-2
+        HallSensor1-2)
     )
     (net "Net-(HallSensor1-Pad3)"
-      (pins U2-1 HallSensor1-3)
+      (pins Multiplier1-7 HallSensor1-3)
     )
     (net "unconnected-(HallSensor1-Pad4)"
       (pins HallSensor1-4)
     )
     (net "Net-(HallSensor1-Pad5)"
-      (pins J2-1 HallSensor1-5)
+      (pins LoadConnector1-1 HallSensor1-5)
     )
     (net "Net-(HallSensor1-Pad6)"
-      (pins U2-3 K1-5 HallSensor1-6)
+      (pins Multiplier1-1 Relay1-5 HallSensor1-6)
     )
     (net "unconnected-(HallSensor1-Pad7)"
       (pins HallSensor1-7)
     )
     (net "Net-(R4-Pad1)"
-      (pins U1-1 R4-1)
-    )
-    (net "Net-(R1-Pad2)"
-      (pins U1-2 Q2-3 R2-1 R1-2)
-    )
-    (net "Net-(K1-Pad1)"
-      (pins Q1-3 K1-1 R3-1)
+      (pins Comparator1-1 R4-1)
     )
     (net "Net-(SW1-Pad2)"
       (pins SW1-2 regolator1-1)
     )
-    (net "Net-(R4-Pad2)"
-      (pins Q2-2 Q1-2 R4-2)
+    (net "Net-(MOSFET1-Pad3)"
+      (pins Comparator1-2 MOSFET1-3 R2-1 R1-2)
     )
-    (net "Net-(J1-Pad3)"
-      (pins J1-3 K1-3)
+    (net "Net-(Relay1-Pad1)"
+      (pins MOSFET2-3 Relay1-1 R3-1)
     )
-    (net "Net-(U1-Pad3)"
-      (pins U2-7 U1-3)
+    (net "Net-(MOSFET2-Pad2)"
+      (pins MOSFET2-2 MOSFET1-2 R4-2)
     )
-    (net "unconnected-(U1-Pad5)"
-      (pins U1-5)
+    (net "Net-(SupplyConnector1-Pad3)"
+      (pins SupplyConnector1-3 Relay1-3)
     )
-    (net "unconnected-(U1-Pad6)"
-      (pins U1-6)
+    (net "Net-(Comparator1-Pad3)"
+      (pins Multiplier1-5 Comparator1-3)
     )
-    (net "unconnected-(U1-Pad7)"
-      (pins U1-7)
+    (net "unconnected-(Comparator1-Pad5)"
+      (pins Comparator1-5)
     )
-    (net "unconnected-(U2-Pad5)"
-      (pins U2-5)
+    (net "unconnected-(Comparator1-Pad6)"
+      (pins Comparator1-6)
     )
-    (net "unconnected-(U2-Pad8)"
-      (pins U2-8)
+    (net "unconnected-(Comparator1-Pad7)"
+      (pins Comparator1-7)
     )
-    (net "Net-(J1-Pad2)"
-      (pins SW1-1 J1-2)
+    (net "Net-(SupplyConnector1-Pad2)"
+      (pins SW1-1 SupplyConnector1-2)
     )
     (class kicad_default
       (circuit
