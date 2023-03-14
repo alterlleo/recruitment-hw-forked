@@ -11,3 +11,6 @@ So after that it is possible to check the ad633 voltage output in the comparator
 
 Now I have the output, it is better to add a LPF in order to erase bad oscillations.
 in order to keep open the relay, the output of the comparator must trigger two transistor: one used to loop the comparator high and the other one to bypass the relay, so it will be open untill someone shut down the system.
+
+----usa mosfet ad esaurimento, la tensione tra gate e source deve essere negativa, minore rispetto alla soglia, anch'essa negativa. in questo modo fa passare corrente, quiando la tensione tra gate e source supera la tensione di soglia il mosfet si comporta come in interruttore aperto
+
