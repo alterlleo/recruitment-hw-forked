@@ -1373,7 +1373,7 @@
     (property "Reference" "Rrelay1" (id 0) (at 88.9 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10" (id 1) (at 88.9 90.1699 0)
+    (property "Value" "30" (id 1) (at 88.9 90.1699 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_2816_7142Metric" (id 2) (at 84.582 88.9 90)
@@ -1630,7 +1630,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 91fc54ff-4276-41b0-a00a-1e9cd1288e91)
     (property "Reference" "Rrelay2" (id 0) (at 100.33 69.85 90))
-    (property "Value" "15" (id 1) (at 100.33 72.39 90))
+    (property "Value" "20" (id 1) (at 100.33 72.39 90))
     (property "Footprint" "Resistor_SMD:R_2816_7142Metric" (id 2) (at 100.33 77.978 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1882,10 +1882,10 @@
       (reference "Rref2") (unit 1) (value "10") (footprint "Resistor_SMD:R_2816_7142Metric")
     )
     (path "/0850d44a-6bde-4886-b872-ef2fda5e1590"
-      (reference "Rrelay1") (unit 1) (value "10") (footprint "Resistor_SMD:R_2816_7142Metric")
+      (reference "Rrelay1") (unit 1) (value "30") (footprint "Resistor_SMD:R_2816_7142Metric")
     )
     (path "/91fc54ff-4276-41b0-a00a-1e9cd1288e91"
-      (reference "Rrelay2") (unit 1) (value "15") (footprint "Resistor_SMD:R_2816_7142Metric")
+      (reference "Rrelay2") (unit 1) (value "20") (footprint "Resistor_SMD:R_2816_7142Metric")
     )
     (path "/5f8faae4-ef37-4fd2-bda1-cf2eb8cb91b1"
       (reference "SW1") (unit 1) (value "switch") (footprint "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin")
