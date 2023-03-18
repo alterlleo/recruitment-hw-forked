@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 585)
+    (start_pass_no 337)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.6)
+      (against_preferred_direction_trace_costs 2.5)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.6)
+      (against_preferred_direction_trace_costs 1.7)
     )
   )
   (rule
@@ -55,8 +55,8 @@
   (class default
     "unconnected-(flipflop1-Pad1)" /Vcc "/V_comp" "unconnected-(flipflop1-Pad4)" "/V_ff" "unconnected-(flipflop1-Pad6)" GND "unconnected-(flipflop1-Pad8)"
     "unconnected-(flipflop1-Pad9)" "unconnected-(flipflop1-Pad10)" "unconnected-(flipflop1-Pad11)" "unconnected-(flipflop1-Pad12)" "unconnected-(flipflop1-Pad13)" "unconnected-(flipflop1-Pad14)" "/V_Nload" "/V_pot"
-    "/V_Nhall" "Net-(Rhall1-Pad2)" "unconnected-(HallSensor1-Pad4)" "Net-(HallSensor1-Pad5)" "Net-(HallSensor1-Pad6)" "unconnected-(HallSensor1-Pad7)" "Net-(Rrelay2-Pad1)" "Net-(Rrelay1-Pad1)"
-    "/V_ref" "Net-(SupplyConnector1-Pad3)" "Net-(SW1-Pad2)" "unconnected-(Comparator1-Pad3)" "unconnected-(Comparator1-Pad5)" "unconnected-(Comparator1-Pad6)" "unconnected-(Comparator1-Pad7)" "Net-(SW1-Pad1)"
+    "/V_Nhall" "Net-(HallSensor1-Pad3)" "unconnected-(HallSensor1-Pad4)" "Net-(HallSensor1-Pad5)" "Net-(HallSensor1-Pad6)" "unconnected-(HallSensor1-Pad7)" "Net-(Q1-Pad3)" "Net-(Q1-Pad2)"
+    "/V_ref" "Net-(Relay1-Pad3)" "Net-(SW1-Pad2)" "unconnected-(Comparator1-Pad5)" "unconnected-(Comparator1-Pad6)" "unconnected-(Comparator1-Pad7)" "Net-(SW1-Pad1)"
     (clearance_class default)
     (via_rule default)
     (rule
