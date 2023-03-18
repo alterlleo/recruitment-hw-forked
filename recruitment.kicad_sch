@@ -1244,7 +1244,7 @@
     (uuid e90c65d9-8ca6-42d9-9c61-ad7117ba01ad)
   )
 
-  (text "Vref voltage divider: the Vref value must be 500*k.\nThe multiplier inputs must be < than 1V. so V_Nhall is equal\nto the sensor output divided by 10 (the sensor's max output is\n6.5V) and V_Nload = Vload/100.\nVref must be 500/(10*1000) * S, were S is the Hall effect sensor\nsensibility\n"
+  (text "Vref voltage divider: the Vref value must be 500*k.\nThe multiplier inputs must be < than 1V. so V_Nhall is equal\nto the sensor output divided by 10 (the sensor's max output is\n6.5V) and V_Nload = Vload/100.\nVref must be 500/(10*100*5) * S, were S is the Hall effect sensor\nsensibility\n"
     (at 63.5 135.89 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1a298258-d286-46a9-94bf-20394ed116da)
@@ -1503,7 +1503,7 @@
     (property "Reference" "Rref1" (id 0) (at 88.9 102.8699 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "4000" (id 1) (at 88.9 105.4099 0)
+    (property "Value" "1900" (id 1) (at 88.9 105.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_SMD:R_2816_7142Metric" (id 2) (at 88.138 104.14 90)
@@ -1876,7 +1876,7 @@
       (reference "Rload2") (unit 1) (value "100") (footprint "Resistor_SMD:R_2816_7142Metric")
     )
     (path "/424d5b31-88ca-4b43-8316-4aec53e16753"
-      (reference "Rref1") (unit 1) (value "4000") (footprint "Resistor_SMD:R_2816_7142Metric")
+      (reference "Rref1") (unit 1) (value "1900") (footprint "Resistor_SMD:R_2816_7142Metric")
     )
     (path "/0688bc70-7f53-41de-a6b4-1297b52069e5"
       (reference "Rref2") (unit 1) (value "10") (footprint "Resistor_SMD:R_2816_7142Metric")
