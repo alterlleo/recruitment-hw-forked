@@ -1254,6 +1254,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 376da170-77aa-4edc-92b3-9d8e0da6eb5e)
   )
+  (text "relay specifics required to close the internal switch:\n3V and 66.6mA"
+    (at 39.37 54.61 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 567a04d6-5dce-4e5f-9e8e-f34010ecea5b)
+  )
   (text "flip flop voltage divider: untill the mosfet is off, the relay\nobtain enough voltage in order to do his work.\nif the mosfet is on, the voltage dividir give less voltage\nto the relay so it will be keep his switch open\n"
     (at 27.94 72.39 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
